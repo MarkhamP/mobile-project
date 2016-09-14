@@ -53,6 +53,7 @@ $(document).ready(function() {
         // STOPPING THE CYCLING AT THE LAST SLIDE
 			  if ($('.carousel-inner .item:last').hasClass('active')) {
 					  console.log("Pausing on the last slide");
+						$('#pauseButton').trigger("click");
             $('#carousel-flowers').carousel('pause');
         }
 
