@@ -11,7 +11,6 @@ $('#pauseButton').click(function () {
 
 
 $(document).ready(function() {
-
 	spectrum();
 	//NOW TAKING CONTROL OF THE CAPTIONS AND ADDING ANIMATIONS
 	//https://www.sitepoint.com/bootstrap-carousel-with-css3-animations/
@@ -56,19 +55,10 @@ $(document).ready(function() {
 						$('#pauseButton').trigger("click");
             $('#carousel-flowers').carousel('pause');
         }
-
     });
-
-
-
-
-
-
-
-
-
-
 });
+
+
 function spectrum() {
 	var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
   console.log("hue " + hue);
