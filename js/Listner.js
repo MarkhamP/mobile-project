@@ -61,7 +61,8 @@ $(document).ready(function() {
 
 function spectrum() {
 	var hue = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-  console.log("hue " + hue);
+  var dt = new Date();
+  console.log("hue " + hue + "  " + dt.getHours() + ":" + dt.getMinutes() + ":"  + dt.getSeconds());
 	$('#wrapper.jumbotron').animate({
 		backgroundColor : hue
 	}, 5000);
